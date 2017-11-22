@@ -19,7 +19,7 @@ def hull(mc,x,y,z):
 	mc.setBlocks(x-2,y+1,z+14,x+2,y+1,z+14,woodp)
 	mc.setBlocks(x-1,y+1,z+16,x+2,y+1,z+16,woodp)
 	mc.setBlocks(x,y+1,z+18,x,y+1,z+18,woodp)
-	mc.setBlocks(x-7,y+2,z+3,x+7.y+2,z+3,woodp)#2
+	mc.setBlocks(x-7,y+2,z+3,x+7,y+2,z+3,woodp)#2
 	mc.setBlocks(x-6,y+2,z+8,x+6,y+2,z+8,woodp)
 	mc.setBlocks(x-5,y+2,z+10,x+5,y+2,z+10,woodp)
 	mc.setBlocks(x-4,y+2,z+13,x+4,y+2,z+13,woodp)
@@ -47,7 +47,7 @@ def hull(mc,x,y,z):
 	mc.setBlocks(x-9,y+4,z+2,x+9,y+4,z+2,woodp)#4
 	mc.setBlocks(x-8,y+4,z+8,x+8,y+4,z+8,woodp)
 	mc.setBlocks(x-8,y+4,z+2,x+8,y+4,z+2,air)
-	mc.setBlocks(x-7,y+4,z+12+,x+7,y+4,z+12,woodp)
+	mc.setBlocks(x-7,y+4,z+12,x+7,y+4,z+12,woodp)
 	mc.setBlocks(x-7,y+4,z+8,x+7,y+4,z+8,air)
 	mc.setBlocks(x-6,y+4,z+15,x+6,y+4,z+15,woodp)
 	mc.setBlocks(x-6,y+4,z+11,x+6,y+4,z+11,air)
@@ -85,10 +85,10 @@ def hull(mc,x,y,z):
 	mc.setBlocks(x-10,y+6,z+7,x+10,y+6,z+7,woodp)#6
 	mc.setBlocks(x-9,y+6,z+10,x+9,y+6,z+7,woodp)
 	mc.setBlocks(x-9,y+6,z+7,x+9,y+6,z+7,air)
-	mc.setBlocks(x-8,y+6,z+15,x+,y+6,z+15,woodp)
-	mc.setBlocks(x-8,y+6,z+12,x+,y+6,z+12,air)
-	mc.setBlocks(x-7,y+6,z+17,x+,y+6,z+17,woodp)
-	mc.setBlocks(x-7,y+6,z+15,x+,y+6,z+15,air)
+	mc.setBlocks(x-8,y+6,z+15,x+8,y+6,z+15,woodp)
+	mc.setBlocks(x-8,y+6,z+12,x+8,y+6,z+12,air)
+	mc.setBlocks(x-7,y+6,z+17,x+7,y+6,z+17,woodp)
+	mc.setBlocks(x-7,y+6,z+15,x+7,y+6,z+15,air)
 	mc.setBlocks(x-6,y+6,z+19,x+6,y+6,z+19,woodp)
 	mc.setBlocks(x-6,y+6,z+19,x+6,y+6,z+19,air)
 	mc.setBlocks(x-5,y+6,z+20,x+5,y+6,z+20,woodp)
@@ -187,17 +187,17 @@ def hull(mc,x,y,z):
 	mc.setBlocks(x-4,y+10,z+23,x+4,y+10,z+23,air)
 	mc.setBlocks(x-3,y+10,z+25,x+3,y+10,z+25,woodp)
 	mc.setBlocks(x-3,y+10,z+24,x+3,y+10,z+24,air)
-	mc.setBlocks(x-2,y+10,z+26,x+,y+10,z+26,woodp)
-	mc.setBlocks(x-2,y+10,z+25,x+,y+10,z+25,air)
-	mc.setBlocks(x-1,y+10,z+27,x+,y+10,z+27,woodp)
-	mc.setBlocks(x-1,y+10,z+26,x+,y+10,z+26,air)
+	mc.setBlocks(x-2,y+10,z+26,x+2,y+10,z+26,woodp)
+	mc.setBlocks(x-2,y+10,z+25,x+2,y+10,z+25,air)
+	mc.setBlocks(x-1,y+10,z+27,x+1,y+10,z+27,woodp)
+	mc.setBlocks(x-1,y+10,z+26,x+1,y+10,z+26,air)
 	mc.setBlocks(x,y+10,z+28,x,y,z+28,woodp)
 	mc.setBlocks(x,y+10,z+28,x,y,z+28,air)
 	mc.setBlocks(x-12,y+11,z+7,x+12,y+11,z+7,woodp)#11
 	mc.setBlocks(x-11,y+11,z+10,x+11,y+11,z+10,woodp)
 	mc.setBlocks(x-11,y+11,z+7,x+11,y+11,z+7,air)
-	mc.setBlocks(x-10,y+11,z+15,x+,y+11,z+15,woodp)
-	mc.setBlocks(x-10,y+11,z+12,x+,y+11,z+12,air)
+	mc.setBlocks(x-10,y+11,z+15,x+10,y+11,z+15,woodp)
+	mc.setBlocks(x-10,y+11,z+12,x+10,y+11,z+12,air)
 	mc.setBlocks(x-9,y+11,z+18,x+9,y+11,z+18,woodp)
 	mc.setBlocks(x-9,y+11,z+15,x+9,y+11,z+15,air)
 	mc.setBlocks(x-8,y+11,z+19,x+8,y+11,z+19,woodp)
@@ -266,8 +266,8 @@ def hull(mc,x,y,z):
 	mc.setBlocks(x-2,y+13,z+26,x+2,y+13,z+26,air)
 	mc.setBlocks(x-1,y+13,z+28,x+1,y+13,z+28,woodp)
 	mc.setBlocks(x-1,y+13,z+27,x+1,y+13,z+27,air)
-	mc.setBlocks(x,y+13,z+29,x+,y,z,woodp)
-	mc.setBlocks(x,y+13,z+28,x+,y,z,air)
+	mc.setBlocks(x,y+13,z+29,x,y,z,woodp)
+	mc.setBlocks(x,y+13,z+28,x,y,z,air)
 	mc.setBlocks(x-12,y+14,z+12,x+12,y+14,z+12,woodp)#14
 	mc.setBlocks(x-11,y+14,z+14,x+11,y+14,z+14,woodp)
 	mc.setBlocks(x-11,y+14,z+12,x+11,y+14,z+12,air)
@@ -342,6 +342,11 @@ def hull(mc,x,y,z):
 	mc.setBlocks(x-1,y+16,z+30,x+1,y+16,z+30,woodp)
 	mc.setBlocks(x-1,y+16,z+29,x+1,y+16,z+29,air)
 	
+def main():
+	mc = init()
+	x, y, z = mc.player.getPos()
+	hull(mc,x,y-15,z)	
+main()	
 	
 	
 	
