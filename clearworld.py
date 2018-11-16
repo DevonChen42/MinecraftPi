@@ -5,6 +5,7 @@ water = 8
 air = 0
 sand = 13
 sslab = 44
+sapling = 6
 def init():
 	mc = Minecraft.create("127.0.0.1",4711)
 	x, y, z = mc.player.getPos()
@@ -14,6 +15,7 @@ def main():
 	x, y, z = mc.player.getPos()
 	mc.player.setPos(x, y, z)
 	mc.setBlocks(x-256,y-256,z-256,x+256,y+256,z+256,air)
+#	mc.setBlocks(x-256,y-60,z-256,x+256,y-58,z+256,sapling)
 	mc.setBlocks(x-256,y-64,z-256,x+256,y-64,z+256,sslab)
 main()
 
