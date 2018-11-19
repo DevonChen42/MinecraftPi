@@ -6,9 +6,13 @@ air = 0
 sand = 13
 sslab = 44
 sapling = 6
+
+
+
 def init():
-	mc = Minecraft.create("127.0.0.1",4711)
+	mc = Minecraft.create("10.183.0.67",4711)
 	x, y, z = mc.player.getPos()
+	#mc = Minecraft.postToChat("No balls for you")
 	return mc
 def main():
 	mc = init()
