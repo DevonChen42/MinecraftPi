@@ -6,9 +6,9 @@ glass = 20
 sslab = 44
 iron = 42
 
-mc = Minecraft.create("10.183.0.67",4711)
+mc = Minecraft.create("10.183.0.72",4711)
 
-mc.postToChat("Hallo, here's Sphere")
+mc.postToChat("Hallo, here's Sphere, behind you?")
 
 radius = 20
 radius1 = 17

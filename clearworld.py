@@ -10,7 +10,7 @@ sapling = 6
 
 
 def init():
-	mc = Minecraft.create("10.183.0.67",4711)
+	mc = Minecraft.create("10.183.3.22",4711)
 	x, y, z = mc.player.getPos()
 	#mc = Minecraft.postToChat("No balls for you")
 	return mc
