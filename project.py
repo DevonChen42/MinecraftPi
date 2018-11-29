@@ -42,7 +42,7 @@ def planet1():
 		for y in range(radius1*-1, radius1):
 			for z in range(radius1*-1,radius1):
 				if x**2 + y**2 + z**2 < radius1**2:
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, cactus)
+					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, lava)
 planet1()
 
 def planet2():

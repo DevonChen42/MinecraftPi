@@ -9,7 +9,7 @@ gstone = 89
 lava = 10
 air = 0
 cactus = 81
-
+gobsidian = 246
 mc = Minecraft.create("10.183.3.22",4711)
 
 #mc.postToChat("Get oofed on")
@@ -19,6 +19,25 @@ radius1 = 8 #lava
 radius2 = 15 #air
 radius3 = 17 #glowstone
 playerPos = mc.player.getPos()
+
+
+def planet3():
+	for x in range(radius3*-1,radius3):#glowstone
+		for y in range(radius3*-1, radius3):
+			for z in range(radius3*-1,radius3):
+				if x**2 + y**2 + z**2 < radius3**2: 
+					mc.setBlock(playerPos.x + x, playerPos.y + radius, playerPos.z - z + 10, gstone)
+					
+	for x in range(radius2*-1,radius2):#air
+		for y in range(radius2*-1, radius2):
+			for z in range(radius2*-1,radius2):
+				if x**2 + y**2 + z**2 < radius2**2:
+					mc.setBlock(playerPos.x + x + 9, playerPos.y + y + radius, playerPos.z - z + 10, gobsidian)
+	
+	
+
+planet3()
+
 '''
 def planet1():
 	for x in range(radius3*-1,radius3):#glowstone
@@ -37,12 +56,15 @@ def planet1():
 			for z in range(radius1*-1,radius1):
 				if x**2 + y**2 + z**2 < radius1**2:
 					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, gstone)
-'''
+
 planet1()
+'''
+'''
 def lines():
 	mc.setBlock(x+15,y,z,x-15,y,z, gstone)
 	mc.setBlock(x,y,z,x,y,z, air)
 lines()
+'''
 '''
 AIR                 = Block(0)
 STONE               = Block(1)
