@@ -8,61 +8,67 @@ iron = 42
 gstone = 89
 lava = 10
 air = 0
-cactus = 81
+gobsidian = 246
+ncore = 247,1
+lapisb = 22
 
 mc = Minecraft.create("10.183.3.22",4711)
 
 mc.postToChat("Get oofed on")
-
+#planet1
 radius = 10 #glass
 radius1 = 8 #lava
 radius2 = 15 #air
 radius3 = 17 #glowstone
+
+#planet2
+radius4 = 9
+radius5 = 5
+
+#planet3
+radius6 = 11
+radius7 = 9
+radius8 = 7
+
+
 playerPos = mc.player.getPos()
 def planet1():
 	for x in range(radius3*-1,radius3):#glowstone
 		for y in range(radius3*-1, radius3):
 			for z in range(radius3*-1,radius3):
 				if x**2 + y**2 + z**2 < radius3**2: 
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, gstone)
+					mc.setBlock(playerPos.x + x, playerPos.y + y + 60, playerPos.z - z + 50, gstone)
 					
 	for x in range(radius2*-1,radius2):#air
 		for y in range(radius2*-1, radius2):
 			for z in range(radius2*-1,radius2):
 				if x**2 + y**2 + z**2 < radius2**2:
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, air)
+					mc.setBlock(playerPos.x + x, playerPos.y + y + 60, playerPos.z - z + 50, air)
 
 	for x in range(radius*-1,radius): #Creates box | glass
 		for y in range(radius*-1, radius):
 			for z in range(radius*-1,radius):
 				if x**2 + y**2 + z**2 < radius**2: #Creates curvature for the sphere
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, glass) #Sets spawn position for the sphere
+					mc.setBlock(playerPos.x + x, playerPos.y + y + 60, playerPos.z - z + 50, glass) #Sets spawn position for the sphere
 					
 	for x in range(radius1*-1,radius1):#lava
 		for y in range(radius1*-1, radius1):
 			for z in range(radius1*-1,radius1):
 				if x**2 + y**2 + z**2 < radius1**2:
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, lava)
+					mc.setBlock(playerPos.x + x, playerPos.y + y + 60, playerPos.z - z + 50, lava)
 planet1()
 
 def planet2():
-	for x in range(radius3*-1,radius3):#glowstone
-		for y in range(radius3*-1, radius3):
-			for z in range(radius3*-1,radius3):
-				if x**2 + y**2 + z**2 < radius3**2: 
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, gstone)
-
-	for x in range(radius3*-1,radius3):#glowstone
-		for y in range(radius3*-1, radius3):
-			for z in range(radius3*-1,radius3):
-				if x**2 + y**2 + z**2 < radius3**2: 
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, gstone)
-
-	for x in range(radius3*-1,radius3):#glowstone
-		for y in range(radius3*-1, radius3):
-			for z in range(radius3*-1,radius3):
-				if x**2 + y**2 + z**2 < radius3**2: 
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, gstone)
+		for x in range(radius4*-1,radius4):#glass
+			for y in range(radius4*-1, radius4):
+				for z in range(radius4*-1,radius4):
+					if x**2 + y**2 + z**2 < radius4**2: 
+						mc.setBlock(playerPos.x + x, playerPos.y + y + 45, playerPos.z - z - 45, glass)
+		for x in range(radius5*-1,radius5):#glowing obsidian
+			for y in range(radius5*-1, radius5):
+				for z in range(radius5*-1,radius5):
+					if x**2 + y**2 + z**2 < radius5**2: 
+						mc.setBlock(playerPos.x + x, playerPos.y + y + 45, playerPos.z - z - 45, gobsidian)
 planet2()
 
 def planet3():
@@ -70,26 +76,74 @@ def planet3():
 		for y in range(radius3*-1, radius3):
 			for z in range(radius3*-1,radius3):
 				if x**2 + y**2 + z**2 < radius3**2: 
-					mc.setBlock(playerPos.x + x, playerPos.y + radius, playerPos.z - z + 10, gstone)
-					
+					mc.setBlock(playerPos.x + x + 40, playerPos.y + 30, playerPos.z - z + 20, ncore)
+						
 	for x in range(radius2*-1,radius2):#air
 		for y in range(radius2*-1, radius2):
 			for z in range(radius2*-1,radius2):
 				if x**2 + y**2 + z**2 < radius2**2:
-					mc.setBlock(playerPos.x + x + 9, playerPos.y + y + radius, playerPos.z - z + 10, air)
-
+					mc.setBlock(playerPos.x + x + 40, playerPos.y + 30, playerPos.z - z + 20, air)
 	for x in range(radius*-1,radius): #Creates box | glass
 		for y in range(radius*-1, radius):
 			for z in range(radius*-1,radius):
 				if x**2 + y**2 + z**2 < radius**2: #Creates curvature for the sphere
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, glass) #Sets spawn position for the sphere
-					
-	for x in range(radius1*-1,radius1):#lava
-		for y in range(radius1*-1, radius1):
-			for z in range(radius1*-1,radius1):
-				if x**2 + y**2 + z**2 < radius1**2:
-					mc.setBlock(playerPos.x + x, playerPos.y + y + radius, playerPos.z - z + 10, gstone)
+					mc.setBlock(playerPos.x + x + 40, playerPos.y + y + 30, playerPos.z - z + 20, gstone) #Sets spawn position for the sphere
+						
 planet3()
+
+
+def planet4():
+	for x in range(radius2*-1,radius2):
+		for y in range(radius2*-1, radius2):
+			for z in range(radius2*-1,radius2):
+				if x**2 + y**2 + z**2 < radius2**2: 
+					mc.setBlock(playerPos.x + x + 40, playerPos.y + 30, playerPos.z - z + 20, gstone)
+						
+	for x in range(radius2*-1,radius2):
+		for y in range(radius2*-1, radius2):
+			for z in range(radius2*-1,radius2):
+				if x**2 + y**2 + z**2 < radius2**2:
+					mc.setBlock(playerPos.x + x + 45, playerPos.y + 30, playerPos.z - z + 20, air)
+					
+	for x in range(radius4*-1,radius4):
+			for y in range(radius4*-1, radius4):
+				for z in range(radius4*-1,radius4):
+					if x**2 + y**2 + z**2 < radius4**2:
+						mc.setBlock(playerPos.x + x + 43, playerPos.y + y + 30, playerPos.z - z + 20, glass)
+						
+	for x in range(radius8*-1,radius8): 
+		for y in range(radius8*-1, radius8):
+			for z in range(radius8*-1,radius8):
+				if x**2 + y**2 + z**2 < radius8**2: 
+					mc.setBlock(playerPos.x + x + 43, playerPos.y + y + 30, playerPos.z - z + 20, lapisb) 
+						
+planet4()
+def planet5():
+	for x in range(radius2*-1,radius2):
+		for y in range(radius2*-1, radius2):
+			for z in range(radius2*-1,radius2):
+				if x**2 + y**2 + z**2 < radius2**2: 
+					mc.setBlock(playerPos.x + x - 40, playerPos.y + 30, playerPos.z - z + 20, gstone)
+						
+	for x in range(radius2*-1,radius2):
+		for y in range(radius2*-1, radius2):
+			for z in range(radius2*-1,radius2):
+				if x**2 + y**2 + z**2 < radius2**2:
+					mc.setBlock(playerPos.x + x - 48, playerPos.y + 30, playerPos.z - z + 20, air)
+					
+	for x in range(radius4*-1,radius4):
+			for y in range(radius4*-1, radius4):
+				for z in range(radius4*-1,radius4):
+					if x**2 + y**2 + z**2 < radius4**2:
+						mc.setBlock(playerPos.x + x - 42, playerPos.y + y + 30, playerPos.z - z + 20, glass)
+						
+	for x in range(radius8*-1,radius8): 
+		for y in range(radius8*-1, radius8):
+			for z in range(radius8*-1,radius8):
+				if x**2 + y**2 + z**2 < radius8**2: 
+					mc.setBlock(playerPos.x + x - 42, playerPos.y + y + 30, playerPos.z - z + 20, lapisb) 
+						
+planet5()
 
 '''
 AIR                 = Block(0)
