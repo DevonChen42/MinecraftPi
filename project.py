@@ -136,16 +136,20 @@ def planet4():
 						
 planet4()
 class walking:
-	x, y, z = mc.player.getPos()
 	def walk():
+
 		while True:
-			mc.setBlock(x, y+1, z-1, snow)
+			x, y, z = mc.player.getPos()
+			mc.setBlock(x, y, z-1, snow)
 	walk()
 	def wipe():
+		
 		while True:
-			mc.setBlock(x, y+1, z-1, air)
-			sleep(2)
+			x, y, z = mc.player.getPos()
+			mc.setBlock(x, y, z-1, x, y, z, air)
+			sleep()
 	
+
 '''
 AIR                 = Block(0)
 STONE               = Block(1)
