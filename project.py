@@ -14,7 +14,7 @@ ncore = 247,1
 lapisb = 22
 snow = 78
 
-mc = Minecraft.create("192.168.0.131",4711)
+mc = Minecraft.create("127.0.0.1",4711)
 
 mc.postToChat("Get oofed on")
 #planet1
@@ -136,13 +136,16 @@ def planet4():
 						
 planet4()
 class walking:
+	x, y, z = mc.player.getPos()
 	def walk():
 		while True:
-			x, y, z = mc.player.getPos()
-			mc.setBlock(x, y-1, z, snow)
-			sleep(0.5)	
+			mc.setBlock(x, y+1, z-1, snow)
 	walk()
-
+	def wipe():
+		while True:
+			mc.setBlock(x, y+1, z-1, air)
+			sleep(2)
+	
 '''
 AIR                 = Block(0)
 STONE               = Block(1)
