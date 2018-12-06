@@ -16,7 +16,7 @@ snow = 78
 
 mc = Minecraft.create("127.0.0.1",4711)
 
-mc.postToChat("Get oofed on")
+mc.postToChat("There are 4 planet functions, feel free to run around and look for them, they should all be in a 50 block radius around your spawn point")
 #planet1
 radius = 10 #glass
 radius1 = 8 #lava
@@ -90,7 +90,7 @@ def planet3():
 		for y in range(radius2*-1, radius2):
 			for z in range(radius2*-1,radius2):
 				if x**2 + y**2 + z**2 < radius2**2:
-					mc.setBlock(playerPos.x + x + 45, playerPos.y + 30, playerPos.z - z + 20, air)
+					mc.setBlock(playerPos.x + x + 47, playerPos.y + 30, playerPos.z - z + 20, air)
 	for x in range(radius*-1,radius): #Creates box | glass
 		for y in range(radius*-1, radius):
 			for z in range(radius*-1,radius):

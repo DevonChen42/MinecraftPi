@@ -14,9 +14,8 @@ ncore = 247,1
 lapisb = 22
 snow = 78
 
-mc = Minecraft.create("127.0.0.1",4711)
+mc = Minecraft.create("10.183.3.25",4711)
 
-mc.postToChat("Get oofed on")
 #planet1
 radius = 10 #glass
 radius1 = 8 #lava
