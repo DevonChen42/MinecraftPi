@@ -1,5 +1,6 @@
 from mcpi.minecraft import Minecraft
 from mcpi import block
+from time import sleep
 
 water = 8
 glass = 20
@@ -11,6 +12,7 @@ air = 0
 gobsidian = 246
 ncore = 247,1
 lapisb = 22
+snow = 78
 
 mc = Minecraft.create("10.183.3.22",4711)
 
@@ -32,6 +34,14 @@ radius8 = 7
 
 
 playerPos = mc.player.getPos()
+
+def walk():
+while True:
+	x, y, z = mc.player.getPos()
+	mc.setBlock(x, y-1, z, snow)
+	sleep(0.5)	
+walk()
+
 def planet1():
 	for x in range(radius3*-1,radius3):#glowstone
 		for y in range(radius3*-1, radius3):
