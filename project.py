@@ -36,10 +36,10 @@ radius8 = 7
 playerPos = mc.player.getPos()
 
 def walk():
-while True:
-	x, y, z = mc.player.getPos()
-	mc.setBlock(x, y-1, z, snow)
-	sleep(0.5)	
+	while True:
+		x, y, z = mc.player.getPos()
+		mc.setBlock(x, y-1, z, snow)
+		sleep(0.5)	
 walk()
 
 def planet1():
